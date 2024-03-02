@@ -1,0 +1,134 @@
+/* Reset and base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Map container styles */
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15%;
+    width: 85%;
+}
+
+/* Sidebar container styles */
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 300px; /* Adjust as needed for content */
+    height: 94vh;
+    width: 12%;
+    left: 0;
+    top: 35px;
+    z-index: 2;
+}
+
+/* Top navigation panel */
+#top-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 2000;
+}
+
+/* Moving title animation */
+#moving-title {
+    display: inline-block;
+    white-space: nowrap;
+    animation: moveTitle 10s linear infinite;
+}
+
+@keyframes moveTitle {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(100%); }
+}
+
+/* Styles for search radius selector */
+.search-radius {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.search-radius select {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.search-radius select:hover,
+.search-radius select:focus {
+    background-color: #f0f0f0;
+    border-color: #007cbf;
+}
+
+/* Search bar and input/button styles */
+.search-bar {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.search-bar input,
+.search-bar button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+.search-bar input {
+    border: 1px solid #ddd;
+}
+
+.search-bar button {
+    background-color: #007cbf;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #005f9e;
+}
+
+/* Store list and individual item styles */
+.store-list {
+    overflow-y: auto;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+    z-index: 2;
+}
+
+.store-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+}
+
+.store-item:hover {
+    background-color: #e0e0e0;
+}

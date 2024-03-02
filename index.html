@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Locator</title>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Turf.js/6.5.0/turf.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div id="map"></div>
+    <div id="top-panel">
+        <div id="moving-title">Store Locator   </div>
+    </div>
+    <div class="container">
+       
+        <div class="search-bar">
+            <input id="location-input" type="text" placeholder="Enter location">
+            <input id="store-input" type="text" placeholder="Enter store name">
+            <!-- <div class="search-radius">
+                <label for="proximity-radius">Proximity Radius (miles):</label>
+                <input id="proximity-radius" type="number" placeholder="Enter proximity radius in miles">
+            </div> -->
+            <button onclick="searchStores()">Search</button>
+        </div>
+        <div class="store-list" id="store-list"></div>
+    </div>
+    
+
+<script src="./main.js"></script>
+</body>
+</html>
