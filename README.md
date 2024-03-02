@@ -14,7 +14,7 @@ This project implements a web-based store locator using Mapbox GL JS. Users can 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/store-locator-web-map.git
+    [git clone https://github.com/your-username/store-locator-web-map.git](https://github.com/ammar450/MapBox-Store-Locator.git)
     ```
 
 2. Navigate to the project directory:
